@@ -122,18 +122,23 @@ for(let i = 0; i < 6; i++){
   else if(languagesspoken.toLowerCase() === 'english') {
     alert('Great job! Hannah speaks ' + languageArray[0] + '. She also speaks ' + languageArray[1] +', ' + languageArray[2] +' and ' + languageArray[3] + '.')
     counter++
-    i = languageArray.length
+    break
   } else if(languagesspoken.toLowerCase() === 'french') {
     alert('Great job! Hannah speaks ' + languageArray[1] + '. She also speaks ' + languageArray[0] +', ' + languageArray[2] +' and ' + languageArray[3] + '.')
-    i = languageArray.length
+    counter++
+    break
   } else if(languagesspoken.toLowerCase() === 'italian') {
     alert('Great job! Hannah speaks ' + languageArray[2] + '. She also speaks ' + languageArray[0] +', ' + languageArray[1] +' and ' + languageArray[3] + '.')
+    counter++
+    break
   } else if(languagesspoken.toLowerCase() === 'spanglish') {
     alert('Great job! Hannah speaks ' + languageArray[3] + '. She also speaks ' + languageArray[0] +', ' + languageArray[1] +' and ' + languageArray[2] + '.')
+    counter++
+    break
   } else if(languagesspoken !== languageArray[i]) {
     alert('Sorry, that\'s not a language Hannah speaks. You have ' + ((languageArray.length + 1) - (i) + ' more chances.'))
   }
   console.log('Index is now', i)
   console.log(languageArray[i])
 }
-let goodjob = prompt('Good Job ' + name + '! You got ' + counter + ' out of 7 questions correct.')
+let goodjob = confirm('Good Job ' + name + '! You got ' + counter + ' out of 7 questions correct.')
