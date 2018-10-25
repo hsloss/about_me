@@ -1,3 +1,47 @@
+body {
+	width: 100%;
+	margin: 0;
+}
+
+nav {
+	width: 100%;
+	height: 5em;
+	background-color: red
+}
+
+aside {
+	width: 20%;
+	background-color: blueviolet;
+	height: 1500px;
+	float: left;
+}
+
+.main-content {
+	width: 75%;
+	background-color: aqua;
+	float: left;
+	height: 1500px;
+}
+
+main {
+	width: 100%;
+	height: 250px ;
+	background-color: yellow;
+}
+#first-section {
+	background-color: purple
+}
+section {
+	width: 50%;
+	float: left;
+	background-color: pink;
+	height: 300px;
+}
+
+p {
+	margin: 0;
+}
+
 h1 {
   margin: 1em 0 0.5em 0;
 	color: #343434;
@@ -6,12 +50,12 @@ h1 {
 	font-size: 36px;
 	line-height: 42px;
 	text-transform: uppercase;
-	text-shadow: 0 2px yellowgreen, 0 3px #777;
+	text-shadow: 0 2px white, 0 3px #777;
 }
 
 h2 {
 margin: 1em 0 0.5em 0;
-	color: #343434;
+	color: red;
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 40px;

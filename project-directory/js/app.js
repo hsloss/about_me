@@ -2,9 +2,9 @@
 
 let counter = 0
 
-let name = prompt('What is your name?')
+let username = prompt('What is your name?')
 
-console.log(name, ' is the username.')
+console.log(username, ' is the username.')
 
 let cityraised = prompt('Did Hannah grow up in DC?')
 
@@ -16,7 +16,7 @@ cityraised.toLowerCase() === 'y' ||
 cityraised.toUpperCase() === 'Y'){
   alert(cityraised + ', that is correct! Although Hannah was born in Silver Spring, MD, she grew up in Northwest, Washington, DC from infancy through secondary school. She graduated from School Without Walls SHS of DC public schools.')
   counter++
-}   
+}
 else {
   alert(cityraised + ', that is not correct. Although Hannah was born in Silver Spring, MD, she grew up in Northwest, Washington, DC from infancy through secondary school. She graduated from School Without Walls SHS of DC public schools.')
 }
@@ -141,4 +141,6 @@ for(let i = 0; i < 6; i++){
   console.log('Index is now', i)
   console.log(languageArray[i])
 }
-let goodjob = confirm('Good Job ' + name + '! You got ' + counter + ' out of 7 questions correct.')
+let goodjob = confirm('Good Job ' + username + '! You got ' + counter + ' out of 7 questions correct.')
+
+console.log(goodjob, 'Quiz is completed.')
